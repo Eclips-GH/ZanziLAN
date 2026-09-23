@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ZanziLAN — LAN VALORANT publique sur 3 jours, 150 joueurs, 30 équipes." />
+  <title>ZanziLAN — LAN VALORANT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/zanzilan-logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Accueil ZanziLAN">
+      <img class="brand-logo" src="assets/zanzilan-logo.png" alt="Logo ZanziLAN" />
+      <span>ZANZI<span>LAN</span></span>
+    </a>
+
+    <button class="menu-button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#event">Événement</a>
+      <a href="#tournoi">Tournoi</a>
+      <a href="#planning">Planning</a>
+      <a href="#benevoles">Bénévoles</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#inscription">S'inscrire</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">26 — 28 MARS 2027 • 3 JOURS • BYOC</p>
+        <h1>
+          TROIS JOURS.<br />
+          <span>UNE SEULE ÉQUIPE</span><br />
+          AU SOMMET.
+        </h1>
+        <p class="hero-copy">
+          ZanziLAN rassemble 150 joueurs pour un week-end VALORANT compétitif,
+          entre matchs, stratégie et ambiance LAN.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#inscription">Inscrire mon équipe</a>
+          <a class="button button-secondary" href="#event">Découvrir l'événement</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>150</strong><span>joueurs</span></div>
+          <div><strong>30</strong><span>équipes</span></div>
+          <div><strong>3</strong><span>jours</span></div>
+          <div><strong>5v5</strong><span>VALORANT</span></div>
+        </div>
+      </div>
+
+      <aside class="countdown-card reveal" aria-label="Compte à rebours">
+        <span class="card-kicker">LE DÉCOMPTE EST LANCÉ</span>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">--</strong><span>jours</span></div>
+          <div><strong id="hours">--</strong><span>heures</span></div>
+          <div><strong id="minutes">--</strong><span>min</span></div>
+          <div><strong id="seconds">--</strong><span>sec</span></div>
+        </div>
+        <p>Vendredi 26 mars 2027</p>
+      </aside>
+    </section>
+
+    <section class="section section-grid" id="event">
+      <div class="section-heading reveal">
+        <p class="eyebrow">L'ÉVÉNEMENT</p>
+        <h2>Une vraie LAN,<br />pas juste un tournoi.</h2>
+      </div>
+
+      <div class="event-copy reveal">
+        <p>
+          Pendant trois jours, les équipes installent leur propre matériel,
+          jouent côte à côte et s'affrontent dans un tournoi VALORANT organisé
+          sur place.
+        </p>
+        <p>
+          Le projet prévoit une infrastructure réseau dédiée, une alimentation
+          électrique adaptée, un espace restauration et une équipe de staff
+          pour assurer le bon déroulement de l'événement.
+        </p>
+
+        <div class="feature-list">
+          <article>
+            <span>01</span>
+            <div><h3>BYOC</h3><p>Apporte ton PC, tes périphériques et ton setup.</p></div>
+          </article>
+          <article>
+            <span>02</span>
+            <div><h3>Réseau LAN</h3><p>Infrastructure pensée pour des matchs stables.</p></div>
+          </article>
+          <article>
+            <span>03</span>
+            <div><h3>Restauration</h3><p>Boissons et nourriture prévues pendant le week-end.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tournament" id="tournoi">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow">FORMAT DU TOURNOI</p>
+        <h2>30 équipes. Une finale.</h2>
+        <p class="subheading">
+          Un format progressif pour garantir plusieurs matchs avant les phases à élimination directe.
+        </p>
+      </div>
+
+      <div class="bracket-flow reveal">
+        <div class="stage active">
+          <span>ÉTAPE 01</span>
+          <strong>30 équipes</strong>
+          <p>Phase de groupes</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="stage">
+          <span>ÉTAPE 02</span>
+          <strong>8 équipes</strong>
+          <p>Quarts de finale</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="stage">
+          <span>ÉTAPE 03</span>
+          <strong>4 équipes</strong>
+          <p>Demi-finales</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="stage final-stage">
+          <span>ÉTAPE 04</span>
+          <strong>2 équipes</strong>
+          <p>Grande finale</p>
+        </div>
+      </div>
+
+      <p class="small-note reveal">
+        Le format exact des groupes, BO1/BO3 et règles de départage pourra être ajusté avant l'événement.
+      </p>
+    </section>
+
+    <section class="section" id="planning">
+      <div class="section-heading reveal">
+        <p class="eyebrow">PROGRAMME</p>
+        <h2>72 heures de LAN.</h2>
+      </div>
+
+      <div class="schedule-tabs reveal">
+        <button class="tab active" data-day="friday">Vendredi <span>26.03</span></button>
+        <button class="tab" data-day="saturday">Samedi <span>27.03</span></button>
+        <button class="tab" data-day="sunday">Dimanche <span>28.03</span></button>
+      </div>
+
+      <div class="schedule reveal">
+        <div class="schedule-day active" id="friday">
+          <div class="schedule-row"><time>16:00</time><div><strong>Ouverture & accueil</strong><p>Check-in des équipes et installation des setups.</p></div></div>
+          <div class="schedule-row"><time>18:30</time><div><strong>Briefing joueurs</strong><p>Règlement, déroulement et informations techniques.</p></div></div>
+          <div class="schedule-row"><time>19:00</time><div><strong>Début des matchs</strong><p>Lancement de la phase de groupes.</p></div></div>
+          <div class="schedule-row"><time>23:00</time><div><strong>Fin du bloc officiel</strong><p>Pause, jeu libre et détente.</p></div></div>
+        </div>
+
+        <div class="schedule-day" id="saturday">
+          <div class="schedule-row"><time>09:00</time><div><strong>Reprise du tournoi</strong><p>Suite de la phase de groupes.</p></div></div>
+          <div class="schedule-row"><time>12:30</time><div><strong>Pause repas</strong><p>Restauration sur place.</p></div></div>
+          <div class="schedule-row"><time>14:00</time><div><strong>Quarts de finale</strong><p>Début des matchs à élimination directe.</p></div></div>
+          <div class="schedule-row"><time>20:00</time><div><strong>Animations & jeu libre</strong><p>Soirée LAN et activités communautaires.</p></div></div>
+        </div>
+
+        <div class="schedule-day" id="sunday">
+          <div class="schedule-row"><time>10:00</time><div><strong>Demi-finales</strong><p>Les quatre meilleures équipes s'affrontent.</p></div></div>
+          <div class="schedule-row"><time>14:00</time><div><strong>Grande finale</strong><p>Le dernier BO décide du vainqueur.</p></div></div>
+          <div class="schedule-row"><time>17:00</time><div><strong>Remise des prix</strong><p>Podium, photos et clôture du tournoi.</p></div></div>
+          <div class="schedule-row"><time>18:00</time><div><strong>Fin de ZanziLAN</strong><p>Rangement et départ des participants.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section registration" id="inscription">
+      <div class="registration-copy reveal">
+        <p class="eyebrow">INSCRIPTIONS</p>
+        <h2>Monte ton équipe.<br />Prends ta place.</h2>
+        <p>
+          L'inscription concerne une équipe complète de 5 joueurs.
+          Les informations ci-dessous servent actuellement de démonstration pour le projet.
+        </p>
+        <ul>
+          <li>5 joueurs par équipe</li>
+          <li>Matériel personnel requis (BYOC)</li>
+          <li>Places limitées à 30 équipes</li>
+          <li>Règlement complet communiqué avant l'événement</li>
+        </ul>
+      </div>
+
+      <div class="signup-card reveal forms-card">
+        <span class="card-kicker">INSCRIPTION EXTERNE</span>
+        <h3>Inscription via Microsoft Forms</h3>
+        <p>
+          Pour inscrire ton équipe, remplis le formulaire officiel ZanziLAN.
+          Une seule réponse est nécessaire par équipe.
+        </p>
+
+        <div class="forms-info">
+          <div><strong>5</strong><span>joueurs par équipe</span></div>
+          <div><strong>30</strong><span>équipes maximum</span></div>
+        </div>
+
+        <!-- Remplace URL_DU_FORMULAIRE_FORMS par le lien de votre Microsoft Forms -->
+        <a
+          class="button button-primary full"
+          href="https://forms.cloud.microsoft/e/Vmf6t2gRSf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          S'inscrire via Forms
+          
+        </a>
+        <p class="forms-note">
+          L'inscription sera confirmée après vérification des informations envoyées.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="volunteer-section" id="benevoles">
+      <div class="volunteer-banner reveal">
+        <img
+          src="assets/zanzilan-banner.png"
+          alt="Ambiance ZanziLAN, LAN gaming rouge et noire"
+          class="volunteer-banner-image"
+        />
+        <div class="volunteer-banner-overlay"></div>
+
+        <div class="volunteer-banner-content">
+          <p class="eyebrow">REJOINS L'ÉQUIPE</p>
+          <h2>Deviens bénévole<br />pour ZanziLAN.</h2>
+          <p>
+            Tu veux participer à l'organisation de l'événement ?
+            Rejoins l'équipe des bénévoles et aide-nous pendant la LAN.
+          </p>
+
+          <a
+            class="button button-primary"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScTwysx_tO3sRGxPDlPQe9yKUdUMMgKwFgf9W_UmWM9BSO85g/viewform?pli=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Formulaire bénévoles
+          </a>
+        </div>
+      </div>
+
+      <div class="volunteer-qr reveal">
+        <div class="volunteer-qr-copy">
+          <p class="eyebrow">INSCRIPTION RAPIDE</p>
+          <h3>Scanne le QR code</h3>
+          <p>
+            Tu peux aussi accéder au formulaire directement depuis ton téléphone
+            en scannant ce QR code.
+          </p>
+          <a
+            class="text-link"
+            href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=CLlqkPkEgEq6nIdaNud7wZRM2L6gFjFIgwUqd3ceMf5UN0xDOVJQRExFTEpTUjUzSE42NzQxWENMTC4u&route=shorturl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ouvrir le formulaire d'inscription →
+          </a>
+        </div>
+
+        <div class="volunteer-qr-card">
+          <img
+            src="assets/qr-benevoles.png"
+            alt="QR code pour accéder au formulaire d'inscription ZanziLAN"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-heading reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2>Les infos essentielles.</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <details>
+          <summary>Que signifie BYOC ?</summary>
+          <p>BYOC signifie « Bring Your Own Computer ». Chaque joueur apporte son propre PC, écran, clavier, souris, casque et câbles nécessaires.</p>
+        </details>
+        <details>
+          <summary>Combien de joueurs peuvent participer ?</summary>
+          <p>Le projet prévoit environ 150 joueurs, soit 30 équipes de 5 joueurs.</p>
+        </details>
+        <details>
+          <summary>Où aura lieu ZanziLAN ?</summary>
+          <p>Le lieu définitif est encore en cours de sélection. Il sera annoncé une fois la salle validée.</p>
+        </details>
+        <details>
+          <summary>Le tournoi est-il officiel Riot Games ?</summary>
+          <p>Non. ZanziLAN est un projet d'événement communautaire et n'est pas affilié à Riot Games.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><img class="brand-logo" src="assets/zanzilan-logo.png" alt="Logo ZanziLAN" /><span>ZANZI<span>LAN</span></span></a>
+    <p>Projet fictif scolaire Module 431 — EPSIC • LAN VALORANT publique • 26–28 mars 2027</p>
+    <p class="riot-note">VALORANT est une marque de Riot Games. Ce projet n'est pas affilié à Riot Games.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
